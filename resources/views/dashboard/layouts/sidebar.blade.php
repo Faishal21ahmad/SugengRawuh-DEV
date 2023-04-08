@@ -3,17 +3,7 @@
         <img src="{{ asset('img/SR.png'); }}" class="mx-auto my-20 h-20">
         <div class="px-8 pb-96">
             <ul class="pt-4 space-y-2 border-t border-gray-700">
-                {{-- Toggle MODE --}}
-                {{-- Hilangkan comment ketika menggunakan linux agar mode bekerja --}}
-                {{-- <li class="py-1 flex items-center justify-center">
-                    <span class="mr-3 text-sm font-medium text-white">Light</span>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" value="" id="dark-toggle" class="sr-only peer" checked>
-                        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                    </label>
-                    <span class="ml-3 text-sm font-medium text-white">Dark</span>
-                </li> --}}
-  
+               
                 <li class="py-1">
                     <a href="/dashboard" class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700">
                         <i class="text-xl fi fi-ss-chart-pie-alt flex items-center text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
@@ -79,6 +69,17 @@
                         </button>
                     </form>
                 </li>
+                 {{-- Toggle MODE --}}
+                {{-- Hilangkan comment ketika menggunakan linux agar mode bekerja --}}
+                {{-- <li class="py-1 flex items-center justify-center">
+                    <span class="mr-3 text-sm font-medium text-white">Light</span>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" id="dark-toggle" class="sr-only peer" checked>
+                        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                    </label>
+                    <span class="ml-3 text-sm font-medium text-white">Dark</span>
+                </li> --}}
+  
             </ul>
         </div>
     </aside>

@@ -7,6 +7,7 @@ use App\Models\MenuRM;
 use App\Models\Pesanan;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use PhpOption\None;
 
 class CartController extends Controller
 {
@@ -14,12 +15,27 @@ class CartController extends Controller
     {
         $menu = MenuRM::find($id);
         $cart = session()->get('cart');
-        $cart[$id] = [
-            'name' => $menu->menu,
-            'jumlah' => 1,
-            'harga' => $menu->harga,
-            'img' => $menu->img
-        ];
+        $data = session()->has('cart' . $id);
+        @dd($data);
+
+        // if ($cart[$id]) {
+        //     $cart[$id] = [
+        //         'name' => $menu->menu,
+        //         'jumlah' => $cart[$id]["jumlah"] + 1,
+        //         'harga' => $menu->harga,
+        //         'img' => $menu->img
+        //     ];
+        // }
+        // if ($cart[$id] ) {
+        //     $cart[$id] = [
+        //         'name' => $menu->menu,
+        //         'jumlah' => 1,
+        //         'harga' => $menu->harga,
+        //         'img' => $menu->img
+        //     ];
+        // }
+
+
         session()->put('cart', $cart);
         return redirect()->back();
     }
@@ -63,7 +79,7 @@ class CartController extends Controller
         $pesan = $request->validate([
             'adminrm_id' => '',
             'meja_id' => '',
-            'jenispembayaran_id' => '',
+            'jenispembayaran_id' => 'required',
             'codepesan' => '',
             'namapemesan' => 'required',
             'totalharga' => '',

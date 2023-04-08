@@ -1,8 +1,8 @@
 <!doctype html>
 
 {{-- ganti tag html yang ata ketika menggunakan linux --}}
-{{-- <html class="dark"> --}}
-<html>
+<html class="dark">
+{{-- <html> --}}
 
 <head>
     <meta charset="utf-8">
