@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
   // ubah media menjadi class ketika menggunakan linux
-  darkMode: 'media',
+  darkMode: 'class',
   content: [
      "./resources/**/*.blade.php",
       "./resources/**/*.js",

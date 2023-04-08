@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\DetailPesanan;
 use App\Models\MenuRM;
 use App\Models\Pesanan;
 use Illuminate\Support\Str;
+
+use App\Models\DetailPesanan;
+use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use PhpOption\None;
+
 
 class CartController extends Controller
 {
@@ -15,26 +17,24 @@ class CartController extends Controller
     {
         $menu = MenuRM::find($id);
         $cart = session()->get('cart');
-        $data = session()->has('cart' . $id);
-        @dd($data);
-
-        // if ($cart[$id]) {
-        //     $cart[$id] = [
-        //         'name' => $menu->menu,
-        //         'jumlah' => $cart[$id]["jumlah"] + 1,
-        //         'harga' => $menu->harga,
-        //         'img' => $menu->img
-        //     ];
-        // }
-        // if ($cart[$id] ) {
-        //     $cart[$id] = [
-        //         'name' => $menu->menu,
-        //         'jumlah' => 1,
-        //         'harga' => $menu->harga,
-        //         'img' => $menu->img
-        //     ];
-        // }
-
+        $h = array_key_exists($id, session('cart'));
+        if ($h === true) {
+            $cart[$id] = [
+                'menuid' => $menu->menu_id,
+                'name' => $menu->menu,
+                'jumlah' => $cart[$id]['jumlah'] + 1,
+                'harga' => $menu->harga,
+                'img' => $menu->img
+            ];
+        } else {
+            $cart[$id] = [
+                'menuid' => $menu->menu_id,
+                'name' => $menu->menu,
+                'jumlah' => 1,
+                'harga' => $menu->harga,
+                'img' => $menu->img
+            ];
+        }
 
         session()->put('cart', $cart);
         return redirect()->back();
@@ -45,6 +45,7 @@ class CartController extends Controller
         $menu = MenuRM::find($id);
         $cart = session()->get('cart');
         $cart[$id] = [
+            'menuid' => $menu->menu_id,
             'name' => $menu->menu,
             'jumlah' => $cart[$id]["jumlah"] + 1,
             'harga' => $menu->harga,
@@ -59,6 +60,7 @@ class CartController extends Controller
         $menu = MenuRM::find($id);
         $cart = session()->get('cart');
         $cart[$id] = [
+            'menuid' => $menu->menu_id,
             'name' => $menu->menu,
             'jumlah' => $cart[$id]["jumlah"] - 1,
             'harga' => $menu->harga,
