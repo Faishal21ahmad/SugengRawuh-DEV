@@ -15,9 +15,15 @@ class CartController extends Controller
 {
     public function addcart($id)
     {
+        session_start();
         $menu = MenuRM::find($id);
         $cart = session()->get('cart');
-        $h = array_key_exists($id, session('cart'));
+        if ($cart === null) {
+            $h = false;
+        } else {
+            $h = array_key_exists($id, session('cart'));
+        }
+
         if ($h === true) {
             $cart[$id] = [
                 'menuid' => $menu->menu_id,

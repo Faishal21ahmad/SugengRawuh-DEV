@@ -1,9 +1,7 @@
 <!doctype html>
-
 {{-- ganti tag html yang ata ketika menggunakan linux --}}
 <html class="dark">
 {{-- <html> --}}
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,23 +15,20 @@
     <title>Rawuh {{ $title }}</title>
 </head>
 <body>
+@include('dashboard.layouts.sidebar')
 
-    <div class="flex">
-        @include('dashboard.layouts.sidebar')
-
-        <div class="container mx-auto">
-            <div class="container">
-                @include('dashboard.layouts.header')
-            </div>
-            @yield('containerDB')
-        </div>
+<div class="sm:ml-64 p-8">
+    <div class="container">
+        @include('dashboard.layouts.header')
     </div>
+    @yield('containerDB')
+</div>
 
+{{-- JS --}}
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
     <script>
         const darkToggle = document.querySelector('#dark-toggle');
         const html = document.querySelector('html');
-
         darkToggle.addEventListener('click', function(){
             if (darkToggle.checked){
                 html.classList.add('dark');

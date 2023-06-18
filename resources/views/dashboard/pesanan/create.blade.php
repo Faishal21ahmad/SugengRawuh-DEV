@@ -2,7 +2,6 @@
 @section('containerPS')
     <div class="w-screen h-auto pb-16 bg-white drop-shadow-2xl rounded-t-lg mx-auto p-4">
         <h1 class="mx-2 font-semibold">Kategori</h1>
-       
         <div class="justify-items-start overflow-x-auto flex flex-nowrap object-cover scrollbar-hide">
             <a href="" class=" items-center px-4 py-2 m-1 text-xs font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-blue-800">Semua</a>
             @foreach ($kategori as $kat)
@@ -14,10 +13,9 @@
         <div class="grid grid-cols-2">
             @foreach ($menu as $item)
             <div class="max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-1">
-
-                <a href="#">
+                <div class="">
                     <img class="rounded-t-lg object-cover overflow-x-auto h-32 w-full" src="{{ asset('storage/' . $item['img']); }}" alt="" />
-                </a>
+                </div>
                 <div class="p-3">
                     <h5 class="px-1 mb-1 text-lsm font-semibold tracking-tight text-gray-900 dark:text-white">{{ $item['menu']; }} 
                         <a href="" class="float-right items-center viewMenuvi"><i class="fi fi-br-menu-dots-vertical"></i></a>

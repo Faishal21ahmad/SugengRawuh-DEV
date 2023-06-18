@@ -43,6 +43,7 @@ Route::get('/register', [RegisterController::class, 'index'])->middleware('guest
 Route::post('/register', [RegisterController::class, 'store']);
 // middleware('auth') ==> hanya dapat di akses oleh user yang sudah login 
 Route::get('/dashboard', [DashboardRMController::class, 'index'])->middleware('auth');
+
 // Route::get('/menu', [MenuRMController::class, 'index'])->middleware('auth');
 
 Route::resource('/menu', MenuRMController::class)->middleware('auth');
@@ -52,6 +53,7 @@ Route::get('/meja/downloadqr/{meja:id}', [MejaRMController::class, 'download']);
 Route::resource('/kategori', KategoriController::class)->middleware('auth');
 
 Route::resource('/pembayaran', PembayaranController::class)->middleware('auth');
+Route::resource('/disservq', PembayaranController::class)->middleware('auth');
 
 Route::get('/pesanan/proses', [PesananController::class, 'proses'])->middleware('auth');
 Route::get('/pesanan/selesai', [PesananController::class, 'selesai'])->middleware('auth');
@@ -62,5 +64,7 @@ Route::get('/addcart/{menu:id}', [CartController::class, 'addcart']);
 Route::get('/editplusqty/{menu:id}', [CartController::class, 'pluscart']);
 Route::get('/editminqty/{menu:id}', [CartController::class, 'minuscart']);
 Route::resource('/pesan', CartController::class);
+
+Route::get('/success', [CartController::class, 'success']);
 
 Route::get('/success', [CartController::class, 'success']);

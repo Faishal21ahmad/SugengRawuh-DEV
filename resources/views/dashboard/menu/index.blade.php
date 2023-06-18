@@ -1,7 +1,6 @@
 @extends('dashboard.layouts.main')
 @section('containerDB')
 
-
 <div class="p-4">
     <div class="flex flex-nowrap">
         <div class="justify-items-start">
@@ -15,8 +14,7 @@
     </div>
 </div>
 
-
-
+{{-- Card all menu --}}
 <div class="container flex flex-wrap">
     @foreach ($menu as $item)
     <div class="m-2 max-w-xs bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" >
@@ -49,8 +47,6 @@
     </div>
     @endforeach
 </div>
-
-
 
 {{-- modal detail menu --}}
     <div id="DetailMenu" tabindex="-1"  class="vimodal fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full bg-black bg-opacity-50">
@@ -138,9 +134,8 @@
             </div>
         </div>
     </div>
-
+    {{-- JS --}}
     <script>
-
         //open close tambah modal
         const modal = document.querySelector('.modal');
 
@@ -185,8 +180,5 @@
                 imgPreview.src = oFREvent.target.result;
             }
         }
-
     </script>
-
-
 @endsection
