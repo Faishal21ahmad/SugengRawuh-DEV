@@ -20,7 +20,7 @@
             Not registered? <a href="/register" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
         </div>
         <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-            Setup Display service <a href="/register" class="text-blue-700 hover:underline dark:text-blue-500">Setup</a>
+            Setup Display service <a href="/dispservi" class="text-blue-700 hover:underline dark:text-blue-500">Setup</a>
         </div>
     </form>
     <br>

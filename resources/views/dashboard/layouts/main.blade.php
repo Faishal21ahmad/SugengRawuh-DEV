@@ -11,18 +11,24 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     @vite('resources/css/app.css')
     <title>Rawuh {{ $title }}</title>
 </head>
-<body>
-@include('dashboard.layouts.sidebar')
+<body class="font-roboto">
+     
+    @include('dashboard.layouts.sidebar')
 
-<div class="sm:ml-64 p-8">
-    <div class="container">
-        @include('dashboard.layouts.header')
+    <div class="p-4 sm:ml-64">
+        <div class="p-4 rounded-lg dark:border-gray-700">
+            @include('dashboard.layouts.header')
+            @yield('containerDB')
+        </div>
     </div>
-    @yield('containerDB')
-</div>
+
 
 {{-- JS --}}
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>

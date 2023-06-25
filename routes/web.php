@@ -4,6 +4,7 @@ use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DashboardRMController;
+use App\Http\Controllers\DisservController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MejaRMController;
@@ -11,7 +12,9 @@ use App\Http\Controllers\MenuRMController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ServicedisplayController;
 use App\Models\MejaRM;
+use App\Models\Servicedisplay;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use PharIo\Manifest\Url;
@@ -53,7 +56,15 @@ Route::get('/meja/downloadqr/{meja:id}', [MejaRMController::class, 'download']);
 Route::resource('/kategori', KategoriController::class)->middleware('auth');
 
 Route::resource('/pembayaran', PembayaranController::class)->middleware('auth');
-Route::resource('/disservq', PembayaranController::class)->middleware('auth');
+
+
+Route::resource('/disserv', DisservController::class);
+
+Route::get('/dispservi/dine', [ServicedisplayController::class,'createdine']);
+Route::get('/dispservi/take', [ServicedisplayController::class,'createtake']);
+Route::resource('/dispservi', ServicedisplayController::class);
+
+
 
 Route::get('/pesanan/proses', [PesananController::class, 'proses'])->middleware('auth');
 Route::get('/pesanan/selesai', [PesananController::class, 'selesai'])->middleware('auth');
