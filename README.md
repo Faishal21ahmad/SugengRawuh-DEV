@@ -11,11 +11,12 @@ php requirement.
 - composer > 2.0
 
 
-There are several steps that must be performed to run this program on the local computer
-#phpmyadmin
+There are several steps that must be performed to run this program on the local computer.
+ phpmyadmin.
 - run server phpmyadmin
-- Import Database name "rawuh"
-#Terminal
+- Import Database name "rawuh".
+
+ Terminal.
 - composer install
 - npm i vite
 - php artisan storage:link
