@@ -10,18 +10,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     @vite('resources/css/app.css')
-    <style>
-        /* For Webkit-based browsers (Chrome, Safari and Opera) */
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-
-        /* For IE, Edge and Firefox */
-        .scrollbar-hide {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-    </style>
+  
     <title>Rawuh {{ $title }}</title>
 </head>
 <body onbeforeunload="destroy()" class="bg-gray-800 bg-repeat bg-contain bg-center" style="background-image: url({{ asset('img/bg.png'); }})">

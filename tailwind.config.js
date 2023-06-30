@@ -26,9 +26,13 @@ module.exports = {
         "Brown-old": "#ED5107",
       
       },
+      
     },
   },
   plugins: [
+    
       require('flowbite/plugin')
+
+
   ],
 }

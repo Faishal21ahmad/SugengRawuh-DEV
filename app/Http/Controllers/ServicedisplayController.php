@@ -20,4 +20,10 @@ class ServicedisplayController extends Controller
     {
         return view('displayservice.cartdinein', []);
     }
+    
+    public function done()
+    {
+        return view('displayservice.done', []);
+    }
+
 }

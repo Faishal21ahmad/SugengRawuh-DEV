@@ -62,6 +62,7 @@ Route::resource('/disserv', DisservController::class);
 
 Route::get('/dispservi/dine', [ServicedisplayController::class,'createdine']);
 Route::get('/dispservi/take', [ServicedisplayController::class,'createtake']);
+Route::get('/dispservi/done', [ServicedisplayController::class,'done']);
 Route::resource('/dispservi', ServicedisplayController::class);
 
 
