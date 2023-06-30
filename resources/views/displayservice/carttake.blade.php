@@ -15,7 +15,7 @@
     <div class="p-2 my-1 rounded-lg  bg-gray-50 dark:bg-gray-700 flex flex-auto">
         <img class="rounded-lg h-16 w-24" src="{{ asset('storage/menu-img/sotoayam.jpg'); }}" alt="" >
             <div class="text-gray-500 dark:text-white my-auto items-center w-auto">
-                <p class="text-lg font-bold px-2">Mie ayam</p>
+                <p class="text-lg font-bold px-2 line-clamp-2">Mie ayam</p>
                 <p class="text-lg font-semibold px-2">13.000</p>
             </div>
         <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
@@ -53,7 +53,7 @@
     <div class="p-2 my-1 rounded-lg  bg-gray-50 dark:bg-gray-700 flex flex-auto">
         <img class="rounded-lg h-16 w-24" src="{{ asset('storage/menu-img/sotoayam.jpg'); }}" alt="" >
             <div class="text-gray-500 dark:text-white my-auto items-center w-auto">
-                <p class="text-lg font-bold px-2">Sate Kambing Spesial</p>
+                <p class="text-lg font-bold px-2 line-clamp-2">Sate Kambing Spesial</p>
             </div>
         <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
             <a href="" class="">
@@ -65,10 +65,10 @@
             </a>
         </div>
     </div>
-    <div class="p-2 my-1 rounded-lg  bg-gray-50 dark:bg-gray-700 flex flex-auto">
+    <div class="p-2 my-1 rounded-lg bg-gray-50 dark:bg-gray-700 flex flex-auto">
         <img class="rounded-lg h-16 w-24" src="{{ asset('storage/menu-img/sop iga.jpg'); }}" alt="" >
             <div class="text-gray-500 dark:text-white my-auto items-center w-auto">
-                <p class="text-lg font-bold px-2">Sop Iga Spesial</p>
+                <p class="text-lg font-bold px-2 line-clamp-2">Sop Iga Spesial</p>
             </div>
         <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
             <a href="" class="">

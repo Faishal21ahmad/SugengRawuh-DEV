@@ -35,7 +35,7 @@
   
 <div class="m-2 mr-10 grid grid-cols-4 w-full">
    
-    <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
+    <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/mie ayam1.jpg'); }}" alt="" />
         </div>
