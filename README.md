@@ -1,6 +1,6 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a> <img src="/pngwing.com.png" width="400" alt="Tailwind Logo"> </p>
 
-<p align="center"><img src="/pngwing.com.png" width="400" alt="Tailwind Logo"></p>
+
 
 ## SUGENG RAWUH DEV
 
@@ -12,6 +12,7 @@ php requirement.
 
 
 There are several steps that must be performed to run this program on the local computer.
+
  phpmyadmin.
 - run server phpmyadmin
 - Import Database name "rawuh".
@@ -20,6 +21,8 @@ There are several steps that must be performed to run this program on the local 
 - composer install
 - npm i vite
 - php artisan storage:link
+
+ Run Server 2 Terminal.
 - php artisan serve
 - npm run dev
 - paste in browser http://127.0.0.1:8000
