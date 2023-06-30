@@ -16,7 +16,7 @@
 
     <div class=" h-screen w-screen relative rounded-xl overflow-auto">
         <a href="/dispservi">
-            <div class="mx-44 my-72 p-36 absolute inset-0 rounded-lg shadow-lg  font-roboto text-white text-sm text-center  font-bold dark:bg-gray-800 ">
+            <div class="mx-44 my-72 p-28 absolute inset-0 rounded-lg shadow-lg  font-roboto text-white text-sm text-center  font-bold dark:bg-gray-800 ">
                 <h1 class="text-6xl p-1">Terima Kasih</h1>
                 <p class="text-2xl p-1">Pesanan anda sedang di proses</p>
             </div>
