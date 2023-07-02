@@ -14,21 +14,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
     @vite('resources/css/app.css')
     <title>Rawuh {{ $title }}</title>
 </head>
-<body class="font-roboto">
-     
+<body class="font-roboto relative">
+    {{-- SideBar List Menu--}}
     @include('dashboard.layouts.sidebar')
 
     <div class="p-6 sm:ml-64">
         <div class="p-4 rounded-lg dark:border-gray-700">
+            {{-- Header content --}}
             @include('dashboard.layouts.header')
+            {{-- Content Inti --}}
             @yield('containerDB')
         </div>
     </div>
-
 
 {{-- JS --}}
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>

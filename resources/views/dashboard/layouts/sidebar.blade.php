@@ -2,12 +2,16 @@
     <div class="h-full p-5 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <img src="{{ asset('img/SR.png'); }}" class="p-9">
             <ul class="pt-8 space-y-2 border-t border-gray-700">
+
+                {{-- Dashboard --}}
                 <li class="py-1">
                     <a href="/dashboard" class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700">
                         <i class="text-xl fi fi-ss-chart-pie-alt flex items-center text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                         <span class="ml-3">Dashboard</span>
                     </a>
                 </li>
+
+                {{-- Menu Fitur lain  --}}
                 <li>
                     <button type="button" class="flex items-center w-full p-2 text-base font-normal transition duration-75 rounded-lg group  text-white hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                         <i class="fi fi-sr-document-signed text-xl flex items-center text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
@@ -30,7 +34,6 @@
                         </li>
                     </ul>
                 </li>
-
                 <li class="py-1">
                     <a href="/menu" class="flex items-center rounded-lg p-2 text-base font-normal text-white hover:bg-gray-700">
                         <i class="fi fi-br-grid text-xl flex items-center text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
@@ -55,14 +58,17 @@
                         <span class="flex-1 ml-3 whitespace-nowrap">Metode Pembayaran</span>
                     </a>
                 </li>
+
+                {{-- Pengaturan Display Service --}}
                 <li class="py-1">
                     <a href="/disserv" class="flex items-center p-2 rounded-lg text-base font-normal text-white hover:bg-gray-700">
-                        {{-- <i class="fi fi-sr-wallet text-xl flex items-center text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i> --}}
                         <i class="fi fi-br-screen text-xl flex items-center text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                         <span class="flex-1 ml-3 whitespace-nowrap">Display service</span>
                     </a>
                 </li>
+
             </ul>
+            {{-- logout --}}
             <ul class="pt-4 mt-4 space-y-2 border-t border-gray-700">    
                 <li class="py-1">
                     <form action="/logout" method="POST">
@@ -75,16 +81,7 @@
                         </button>
                     </form>
                 </li>
-                {{-- Toggle MODE --}}
-                {{-- Hilangkan comment ketika menggunakan linux agar mode bekerja --}}
-                {{-- <li class="py-1 flex items-center justify-center">
-                    <span class="mr-3 text-sm font-medium text-white">Light</span>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" value="" id="dark-toggle" class="sr-only peer" checked>
-                        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                    </label>
-                    <span class="ml-3 text-sm font-medium text-white">Dark</span>
-                </li> --}}
+                
             </ul>
     </div>
 </aside>

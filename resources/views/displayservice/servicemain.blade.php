@@ -12,7 +12,6 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -20,6 +19,30 @@
     <title>Display Service</title>
 </head>
 <body class="font-roboto">
+
+    <div class="bg-white w-screen h-screen p-16 flex">
+        <div class="bg-white h-full w-full overflow-hidden ">
+            {{-- Menampilkan Kategori List --}}
+            <div class="bg-white w-full h-14 items-center flex">
+                @include('displayservice.kategorilist')
+            </div>
+            {{-- Menampilkan Card menu List --}}
+            <div class="h-modal w-full flex flex-wrap overflow-y-auto scrollbar-hide">
+                @include('displayservice.listmenu')
+            </div>
+        </div>
+        {{-- Menampilkan Cart Take Away dan Dine In  --}}
+        <div class="right-0 bg-slate-300 h-full w-1/3 p-6 dark:bg-gray-800 rounded-md relative overflow-hidden flex-initial">
+                @yield('cart')
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
 
         {{-- <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
@@ -176,42 +199,3 @@
         </div>
         --}}
  
-<div class="bg-white w-screen h-screen p-16 flex">
-    <div class="bg-white h-full w-full overflow-hidden ">
-        <div class="bg-white w-full h-14 items-center flex">
-            @include('displayservice.kategorilist')
-        </div>
-        <div class="h-modal w-full flex flex-wrap overflow-y-auto scrollbar-hide">
-            @include('displayservice.listmenu')
-        </div>
-    </div>
-    <div class="right-0 bg-slate-300 h-full w-1/3 p-6 dark:bg-gray-800 rounded-md relative overflow-hidden flex-initial">
-            @yield('cart')
-    </div>
-</div>
-
-
-
-    
-        {{-- <div class="flex p-14">
-            <div class="bg-white">
-                <div class="fixed bg-white">
-                    @include('displayservice.kategorilist')
-                </div>
-                <div class="flex flex-wrap mt-5">
-                    @include('displayservice.listmenu')
-                </div>
-            </div>
-
-            <div class=" p-6 dark:bg-gray-800 rounded-md">
-                @yield('cart')
-            </div>
-        </div> --}}
-
-    </div>
-</body>
-</html>
-
-
-
-

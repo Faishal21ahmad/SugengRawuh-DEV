@@ -5,33 +5,8 @@
         
 <div class="w-full">
     <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Pemesan</label>
-    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black " placeholder="John" required>
+    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black " placeholder="Isal" required>
 </div>
-
-{{-- <div class="mt-4 h-96 overflow-y-auto scrollbar-hide"  aria-labelledby="dropdownSearchButton" id="listmenu">
-    <?php
-    for ($i = 1; $i <= 20; $i++) {
-        ?>
-    <div class="p-2 my-1 rounded-lg  bg-gray-50 dark:bg-gray-700 flex flex-auto">
-        <img class="rounded-lg h-16 w-24" src="{{ asset('storage/menu-img/sotoayam.jpg'); }}" alt="" >
-            <div class="text-gray-500 dark:text-white my-auto items-center w-auto">
-                <p class="text-lg font-bold px-2 line-clamp-2">Mie ayam</p>
-                <p class="text-lg font-semibold px-2">13.000</p>
-            </div>
-        <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
-            <a href="" class="">
-                <i class="fi fi-sr-cross-circle text-2xl"></i>
-            </a>
-            <p class="text-lg font-semibold mx-5">2</p>
-            <a href="#">
-                <i class="fi fi-sr-add text-2xl"></i>
-            </a>
-        </div>
-    </div>
-    <?php
-}
-?>
-</div> --}}
 
 <div class="mt-4 h-96 overflow-y-auto scrollbar-hide"  aria-labelledby="dropdownSearchButton" id="listmenu">
     
@@ -42,9 +17,9 @@
             </div>
         <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
             <a href="" class="">
-                <i class="fi fi-sr-cross-circle text-2xl"></i>
+               <i class="fi fi-sr-minus-circle text-2xl"></i>
             </a>
-            <p class="text-lg font-semibold mx-5">2</p>
+            <p class="text-lg font-semibold mx-5">1</p>
             <a href="#">
                 <i class="fi fi-sr-add text-2xl"></i>
             </a>
@@ -57,9 +32,9 @@
             </div>
         <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
             <a href="" class="">
-                <i class="fi fi-sr-cross-circle text-2xl"></i>
+               <i class="fi fi-sr-minus-circle text-2xl"></i>
             </a>
-            <p class="text-lg font-semibold mx-5">2</p>
+            <p class="text-lg font-semibold mx-5">1</p>
             <a href="#">
                 <i class="fi fi-sr-add text-2xl"></i>
             </a>
@@ -72,9 +47,9 @@
             </div>
         <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5 ">
             <a href="" class="">
-                <i class="fi fi-sr-cross-circle text-2xl"></i>
+               <i class="fi fi-sr-minus-circle text-2xl"></i>
             </a>
-            <p class="text-lg font-semibold mx-5">2</p>
+            <p class="text-lg font-semibold mx-5">1</p>
             <a href="#">
                 <i class="fi fi-sr-add text-2xl"></i>
             </a>
@@ -127,7 +102,7 @@
                    3 Menu
                 </p>
                 <p class="font-bold text-lg text-end py-3 mr-3">
-                    Rp.50000
+                    Rp.45000
                 </p>
             </div>
             <div class="w-1/4 h-14 ">

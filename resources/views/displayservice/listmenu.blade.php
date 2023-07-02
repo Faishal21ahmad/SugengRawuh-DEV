@@ -32,9 +32,9 @@
 
 
 
-  
+{{-- GRID --}}
 <div class="m-2 mr-10 grid grid-cols-4 w-full">
-   
+    {{-- SAMPEL CODING Menu 1 (Menu Tersedia) --}}
     <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/mie ayam1.jpg'); }}" alt="" />
@@ -42,9 +42,9 @@
         <div class="relative p-3 h-48">
             <div class="flex">
                 <p class="grow px-1 text-2xl font-bold text-gray-900 dark:text-white line-clamp-2">Mie Ayam Spesial </p>
-                <a href="" class="flex-none text-2xl font-bold dark:text-white mt-2 viewMenuvi"><i class="fi fi-br-menu-dots-vertical p-1"></i></a>
+                <a href="" class="flex-none text-2xl font-bold dark:text-white mt-2"><i class="fi fi-br-menu-dots-vertical p-1"></i></a>
             </div>
-            
+
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
                 <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
@@ -53,7 +53,6 @@
             </div>
         </div>
     </div>
-
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/nasi goreng spesial.jpg'); }}" alt="" />
@@ -72,7 +71,6 @@
             </div>
         </div>
     </div>
-
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/sate.jpg'); }}" alt="" />
@@ -91,7 +89,6 @@
             </div>
         </div>
     </div>
-
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/sop iga.jpg'); }}" alt="" />
@@ -110,7 +107,6 @@
             </div>
         </div>
     </div>
-
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/teh kuli.jpg'); }}" alt="" />
@@ -129,7 +125,7 @@
             </div>
         </div>
     </div>
-
+     {{-- SAMPEL CODING Menu 6 (Tidak Tersedia) --}}
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/sotoayam.jpg'); }}" alt="" />
@@ -137,13 +133,13 @@
         <div class="relative p-3 h-48">
             <div class="flex">
                 <p class="grow px-1 text-2xl font-bold text-gray-900 dark:text-white line-clamp-2">Soto Ayam Spesial </p>
-                <a href="" class="flex-none text-2xl font-bold dark:text-white mt-2 viewMenuvi"><i class="fi fi-br-menu-dots-vertical p-1"></i></a>
+                <a href="" class="flex-none text-2xl font-bold dark:text-white mt-2"><i class="fi fi-br-menu-dots-vertical p-1"></i></a>
             </div>
-            
+
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
-                    <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
+                <a href="" class="inline-flex w-full items-baseline py-2 text-sm font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 "> 
+                    <p class="mx-auto font-bold text-lg flex items-center">Tidak Tersedia</p>
                 </a>
             </div>
         </div>
@@ -170,7 +166,7 @@
 
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
-            <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/mie ayam1.jpg'); }}" alt="" />
+            <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/wedang jahe.jpg'); }}" alt="" />
         </div>
         <div class="relative p-3 h-48">
             <div class="flex">

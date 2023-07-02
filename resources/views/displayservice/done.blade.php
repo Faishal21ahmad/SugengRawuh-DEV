@@ -12,17 +12,12 @@
     @vite('resources/css/app.css')
     <title>Display Service</title>
 </head>
-<body>
-
-    <div class=" h-screen w-screen relative rounded-xl overflow-auto">
-        <a href="/dispservi">
-            <div class="mx-44 my-72 p-28 absolute inset-0 rounded-lg shadow-lg  font-roboto text-white text-sm text-center  font-bold dark:bg-gray-800 ">
-                <h1 class="text-6xl p-1">Terima Kasih</h1>
-                <p class="text-2xl p-1">Pesanan anda sedang di proses</p>
-            </div>
+<body class="font-roboto">
+    <div class="h-screen w-screen relative rounded-xl overflow-auto text-center">
+        <a href="/dispservi" class="mx-44 my-72 absolute inset-0 rounded-lg shadow-lg flex items-center text-white text-center font-bold dark:bg-gray-800 ">
+            <h1 class="text-6xl p-1 items-center mx-auto">Terima Kasih <p class="text-2xl p-1 items-center mx-auto">Pesanan anda sedang di proses</p></h1>
         </a>
     </div>
-
 </body>
 </html>
 
