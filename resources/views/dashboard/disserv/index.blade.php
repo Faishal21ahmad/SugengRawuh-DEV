@@ -17,40 +17,23 @@
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700
              dark:text-gray-400">
                 <tr>
-                    <th scope="col" class="px-6 py-3">
-                        No
-                    </th>
-                    <th scope="col" class="px-10 py-3">
-                        Display 
-                    </th>
-                    <th scope="col" class="px-10 py-3">
-                        Code Auth
-                    </th>
-                    <th scope="col" class="px-10 py-3">
-                        Status 
-                    </th>
-                    <th scope="col" class="px-20 py-3">
-                        Aksi
-                    </th>
+                    <th scope="col" class="px-6 py-3">No</th>
+                    <th scope="col" class="px-10 py-3">Display</th>
+                    <th scope="col" class="px-10 py-3">Code Auth</th>
+                    <th scope="col" class="px-10 py-3">Status</th>
+                    <th scope="col" class="px-20 py-3">Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 {{-- Data Display 1 --}}
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                        </th>
-                        <td class="px-10 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Display 1
-                        </td>
-                        <td class="px-10 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Au765gN
-                        </td>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                        <td class="px-10 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Display 1</td>
+                        <td class="px-10 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Au765gN</td>
                         <td class="px-10 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             <p id="statusdisable1" class="hidden">Disable</p>
                             <p id="statusactive1" class="">Active</p>
                         </td>
-                        
                         <td class="px-10 py-4 flex flex-auto">
                             <a href="#" id="disable1" class="hidden mx-1 inline-flex items-end px-3 py-2 text-sm font-medium text-center text-white bg-reed-700 rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 
                             dark:bg-red-750 dark:hover:bg-red-800 dark:focus:ring-red-900">
@@ -96,7 +79,6 @@
                             </form>
                         </td>
                     </tr>
-
             </tbody>
         </table>
     </div>
@@ -149,12 +131,11 @@
     })
 //modal drawer alert delete
 
-//modal drawer status 
+// Merubah status ketika di Rubah
     const statusdisable1 = document.getElementById('statusdisable1');
     const statusactive1 = document.getElementById('statusactive1');
     const disable1 = document.getElementById('disable1');
     const active1 = document.getElementById('active1');
-
 
     active1.addEventListener('click', function(){
         disable1.classList.remove('hidden')
@@ -178,6 +159,7 @@
     const active2 = document.getElementById('active2');
 
     active2.addEventListener('click', function(){
+        
         disable2.classList.remove('hidden')
         statusdisable2.classList.remove('hidden')
 
@@ -192,7 +174,7 @@
         active2.classList.remove('hidden')
         statusactive2.classList.remove('hidden')
     })
-//modal drawer status 
+// Merubah status ketika di RUbah
 </script>
 
 @endsection

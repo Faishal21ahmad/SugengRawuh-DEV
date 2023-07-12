@@ -37,6 +37,49 @@
         </div>
     </div>
 
+    <script>
+        const menu1 = document.getElementById('menu1');
+        const menu2 = document.getElementById('menu2');
+        const menu3 = document.getElementById('menu3');
+        const menu4 = document.getElementById('menu4');
+        const menu5 = document.getElementById('menu5');
+        const menu6 = document.getElementById('menu6');
+        const menu7 = document.getElementById('menu7');
+        const menu8 = document.getElementById('menu8');
+        const beli1 = document.getElementById('beli1');
+        const beli2 = document.getElementById('beli2');
+        const beli3 = document.getElementById('beli3');
+        const beli4 = document.getElementById('beli4');
+        const beli5 = document.getElementById('beli5');
+        const beli6 = document.getElementById('beli6');
+        const beli7 = document.getElementById('beli7');
+        const beli8 = document.getElementById('beli8');
+    
+        beli1.addEventListener('click', function(){
+            menu1.classList.remove('hidden')
+        })
+        beli2.addEventListener('click', function(){
+            menu2.classList.remove('hidden')
+        })
+        beli3.addEventListener('click', function(){
+            menu3.classList.remove('hidden')
+        })
+        beli4.addEventListener('click', function(){
+            menu4.classList.remove('hidden')
+        })
+        beli5.addEventListener('click', function(){
+            menu5.classList.remove('hidden')
+        })
+        beli6.addEventListener('click', function(){
+            menu6.classList.remove('hidden')
+        })
+        beli7.addEventListener('click', function(){
+            menu7.classList.remove('hidden')
+        })
+        beli8.addEventListener('click', function(){
+            menu8.classList.remove('hidden')
+        })
+    </script>
 </body>
 </html>
 

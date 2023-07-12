@@ -30,12 +30,11 @@
         }
         ?> --}}
 
-
-
 {{-- GRID --}}
 <div class="m-2 mr-10 grid grid-cols-4 w-full">
-    {{-- SAMPEL CODING Menu 1 (Menu Tersedia) --}}
-    <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
+    {{-- SAMPEL CODING Menu 1 ketika (Menu Tersedia) --}}
+    <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800
+        dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/mie ayam1.jpg'); }}" alt="" />
         </div>
@@ -47,7 +46,7 @@
 
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli1" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
@@ -65,7 +64,7 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli2" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
@@ -83,7 +82,7 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli3" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
@@ -101,7 +100,7 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli4" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
@@ -119,13 +118,13 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.1000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli5" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
         </div>
     </div>
-     {{-- SAMPEL CODING Menu 6 (Tidak Tersedia) --}}
+     {{-- SAMPEL CODING Menu 6 ketika (Tidak Tersedia) --}}
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/sotoayam.jpg'); }}" alt="" />
@@ -138,7 +137,7 @@
 
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="" class="inline-flex w-full items-baseline py-2 text-sm font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 "> 
+                <a  href="" class="inline-flex w-full items-baseline py-2 text-sm font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Tidak Tersedia</p>
                 </a>
             </div>
@@ -157,13 +156,12 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.15000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli6" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
         </div>
     </div>
-
     <div class=" max-w-sx bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <div class="">
             <img class="rounded-t-lg object-cover h-44 w-full" src="{{ asset('storage/menu-img/wedang jahe.jpg'); }}" alt="" />
@@ -176,7 +174,7 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.5000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli7" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
@@ -195,7 +193,7 @@
             
             <div class="absolute inset-x-0 bottom-0 p-3">
                 <p class="px-1 mb-5 text-gray-700 dark:text-white font-semibold">Rp.20000</p>
-                <a href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
+                <a id="beli8" href="#" class="inline-flex w-full items-baseline py-2 text-xs font-normal text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "> 
                     <p class="mx-auto font-bold text-lg flex items-center">Beli</p>
                 </a>
             </div>
